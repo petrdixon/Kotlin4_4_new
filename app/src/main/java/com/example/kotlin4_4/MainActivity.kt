@@ -18,7 +18,7 @@ class MainActivity : MvpAppCompatActivity(R.layout.activity_main), MainView {
         private const val STORAGE_PERMISSION_CODE = 101
     }
     private var vb: ActivityMainBinding? = null
-    private val presenter by moxyPresenter { MainPresenter(Converter()) }
+    private val presenter by moxyPresenter { MainPresenter() }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
